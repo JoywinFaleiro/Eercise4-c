@@ -15,7 +15,7 @@ if(isset($_POST["submit"])){
     echo
     "<script> alert('Username or Email Has Already Taken'); </script>";
   }
-  elseif(strlen(trim($password) )< 2){
+  elseif(strlen(trim($password) )< 8){
     echo "<script> alert('Password must have atleast 8 characters.'); </script>";
    }
   else{
